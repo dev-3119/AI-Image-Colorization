@@ -4,8 +4,6 @@ uvicorn
 
 # Machine Learning & Image Processing
 tensorflow
-torch
-torchvision
 numpy
 opencv-python
 Pillow
@@ -15,10 +13,3 @@ matplotlib
 
 # For Handling API Requests
 requests
-
-# If using Hugging Face Models
-transformers
-
-# If using GPU acceleration (Optional)
-tensorflow-metal  # for Mac M1/M2
-tensorflow-gpu  # for NVIDIA GPUs
