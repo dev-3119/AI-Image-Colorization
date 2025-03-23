@@ -26,7 +26,7 @@ def mae(y_true, y_pred):
 
 # Load the pre-trained model with custom objects
 custom_objects = {"mae": mae}
-model = tf.keras.models.load_model("./test_gan_1.h5", custom_objects=custom_objects)
+model = tf.keras.models.load_model("test_gan_1.h5", custom_objects=custom_objects)
 
 @app.post("/predict/")
 async def predict(file: UploadFile = File(...)):
