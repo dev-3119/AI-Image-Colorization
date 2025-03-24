@@ -25,8 +25,7 @@ cd AI-Image-Colorization
 
 ### 🔹 Install Dependencies  
 For the backend:  
-```bash
-cd backend  
+```bash 
 pip install -r requirements.txt  
 ```
 For the frontend, no additional dependencies are required.
@@ -36,8 +35,7 @@ For the frontend, no additional dependencies are required.
 ## 🎨 Usage  
 
 ### 🔹 Run the Backend  
-```bash
-cd backend  
+```bash  
 uvicorn app:app --host 0.0.0.0 --port 8000  
 ```
 The API will be available at `http://localhost:8000`.  
@@ -56,23 +54,14 @@ Simply open `frontend/index.html` in a browser.
 
 To train your own colorization model:  
 ```bash
-cd model_training  
-python train.py  
+python main.py  
 ```
 Modify `train.py` to customize training parameters like epochs, batch size, etc.
 
 ---
 
-## 🚀 Deployment  
-
-### 🔹 Deploy on GitHub Pages (Frontend)  
-1. Upload the `frontend/` folder to your GitHub repository.  
-2. Go to **Settings > Pages** and select `frontend/` as the root.  
-
 ### 🔹 Deploy Backend on Render  
-1. Push the backend code to GitHub.  
-2. Go to **Render** and select “New Web Service”.  
-3. Deploy using `uvicorn` as the start command.  
+1. Push the backend code to GitHub.    2. Deploy using `uvicorn` as the start command.  
 
 ---
 
